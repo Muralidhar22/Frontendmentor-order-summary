@@ -1,0 +1,79 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+:root{
+    font-size: 16px;
+    font-family: 'Outfit';
+    --Pale-blue: hsl(225, 100%, 94%);
+}
+body{
+    background: url(order-summary-component-main/images/pattern-background-desktop.svg), var(--Pale-blue) ;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* width:100%;
+height: 100vh; */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; 
+}
+.container{
+    max-width: 28.125rem;
+    background-color: white;
+    border-radius: 15px;
+}
+img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h1{
+    margin: 1.5rem;
+    text-align: center;
+}
+.container-order-summary{
+    border-radius: 15px;
+    padding: 0 3.5rem 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0rem;
+}
+.container-annual-plan{
+    padding: 0;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+}
+.container-payment-order{
+    padding: 0.7rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #888888;
+}
+.container-annual-plan,
+.container-payment-order{
+    margin: 1rem;
+    width: 100%;
+}
+.cancel-order{
+    cursor: pointer;
+}
+.proceed-payment{
+    cursor: pointer;
+}
+.change{
+   margin-left: 2rem;
+}
+.annual-details{
+    margin-left: 1rem;
+    text-align: center;
+}
+
