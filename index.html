@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend Mentor | Order summary card</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="order-summary-component-main/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,28 +14,30 @@
 </head>
 <body>
 <main>
-    <div class="container">    
+    <div class="container"> 
+        <div class="main-img">
+            <img src="images/illustration-hero.svg"/>
+        </div>   
         <div class="container-order-summary">
-            <img src="illustration-hero.svg"/>
             <h1>Order Summary</h1>
-            <p style="text-align: center;">You can now listen to millions of songs, 
+            <p style="text-align: center;line-height: 1.6;color: hsl(224, 23%, 55%);">You can now listen to millions of songs, 
                 audiobooks, ad podcasts on any device
                  anywhere you like!</p>
             <div class="container-annual-plan">
-                <img src="icon-music.svg"/>
-                    <div>
-                    <p>Annual Charges</p>
-                    <p>$59.99/year</p>
-                    </div>
-                <a href="#">Change</a>
+                <img src="images/icon-music.svg"/>
+                    <span>
+                    <p style="font-weight: 600;">Annual Plan</p>
+                    <p style="color: hsl(224, 23%, 55%);">$59.99/year</p>
+                    </span>
+                <a class="change" href="#">Change</a>
             </div>
             <div class="container-payment-order">
                 <p style="text-align: center;" class="proceed-payment">Proceed to Payment</p>
             </div>
-            <p style="text-align: center;" class="cancel-order">Cancel Order</p>
-        </div>    
-            
+            <a class="cancel-order">Cancel Order</a>
+        </div>          
     </div>
 </main>
 </body>
 </html>
+
