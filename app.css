@@ -4,7 +4,7 @@
    box-sizing: border-box; 
 }
 :root{
-    font-size: 16px;
+    font-size: 62.5%;
     font-family: 'Outfit';
     --Pale-blue: hsl(225, 100%, 94%);
 }
@@ -21,17 +21,17 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     min-height: 100vh; 
 }
 .container{
-    max-width: 28.125rem;
+    max-width: 375px;
     background-color: white;
     border-radius: 15px;
 }
 img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    max-width: 375px;
 }
 h1{
     margin: 1.5rem;
@@ -46,10 +46,12 @@ h1{
     margin-top: 0rem;
 }
 .container-annual-plan{
-    padding: 0;
+    padding: 1rem;
     background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .container-payment-order{
     padding: 0.7rem;
@@ -60,7 +62,7 @@ h1{
 }
 .container-annual-plan,
 .container-payment-order{
-    margin: 1rem;
+    
     width: 100%;
 }
 .cancel-order{
@@ -76,4 +78,8 @@ h1{
     margin-left: 1rem;
     text-align: center;
 }
-
+@media only screen and (max-width: 375px){
+    :root{
+        font-size: 50%;
+    }
+}
